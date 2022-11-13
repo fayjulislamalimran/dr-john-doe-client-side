@@ -17,7 +17,7 @@ const ServicesCart = ({ service }) => {
                 <div className="card-actions text-lg">
                     {
                         description.length > 100 ?
-                            <p>{description.slice(0, 100) + '...'} <Link className='text-orange-600' to={`/checkout/${_id}`}>Read More</Link></p> :
+                            // <p>{description.slice(0, 100) + '...'} <Link className='text-orange-600' to={`/checkout/${_id}`}>Read More</Link></p> :
                             <p>{description}</p>
                     }
                 </div>
