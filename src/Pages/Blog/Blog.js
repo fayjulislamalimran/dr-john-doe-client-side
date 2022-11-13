@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <div className="my-20">
       <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box py-10 my-8">
-        <div className="collapse-title text-3xl font-medium">{/* 1. Difference between SQL and NoSQL ? */}</div>
+        <div className="collapse-title text-3xl font-medium">1. Difference between SQL and NoSQL ?</div>
         <div className="collapse-content text-xl">
           <p>
             <span className="text-orange-600 font-bold">Ans:</span> SQL is the programming language used to interface with relational databases. (Relational databases model data as records in rows and tables with logical links between them). NoSQL is a class of DBMs that are non-relational and generally do not use SQL.
