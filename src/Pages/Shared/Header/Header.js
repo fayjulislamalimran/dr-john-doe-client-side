@@ -37,7 +37,7 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar bg-blue-200 mb-8">
+    <div className="navbar bg-slate-200 mb-8">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -55,9 +55,6 @@ const Header = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 font-semibold">{menuItems}</ul>
-      </div>
-      <div className="navbar-end">
-        <button className="btn btn-outline btn-warning">Make An Apoinment</button>
       </div>
     </div>
   );
