@@ -18,8 +18,8 @@ const ServicesCart = ({ service }) => {
           {description.length > 100 ? (
             <p>
               {description.slice(0, 100) + "..."}{" "}
-              <Link className="text-orange-600" to={`/checkout/${_id}`}>
-                Read More
+              <Link to={`/checkout/${_id}`}>
+                <button class="btn rounded-sm mx-2 bg-slate-200 text-slate-900">view details</button>
               </Link>
             </p>
           ) : (

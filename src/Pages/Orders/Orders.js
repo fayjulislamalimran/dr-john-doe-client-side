@@ -27,7 +27,7 @@ const Orders = () => {
   }, [user?.email]);
 
   const handleDelete = (id) => {
-    const proceed = window.confirm("Are You Sure Want to cencel this order");
+    const proceed = window.confirm("Are You Sure Want to cencel this Revew");
     if (proceed) {
       fetch(`https://dr-john-doe-server.vercel.app/orders/${id}`, {
         method: "DELETE",
@@ -69,9 +69,7 @@ const Orders = () => {
   return (
     <div className="my-12">
       <div className="overflow-x-auto w-full">
-        <h2 className="text-2xl text-center font-thin my-7">
-          You Have a<span>{orders?.lenght}</span> Orders Now
-        </h2>
+        <h2 className="text-2xl text-center font-thin my-7">Please Give Me Review</h2>
         <table className="table w-full">
           <thead>
             <tr>

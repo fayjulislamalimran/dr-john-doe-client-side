@@ -20,17 +20,18 @@ const Header = () => {
       <li>
         <Link to="/blog">Blog</Link>
       </li>
-      <li>
-        <Link to="/login">Login</Link>
-      </li>
 
       <li>
         {user?.email ? (
           <>
+            <Link to="/orders">Review</Link>
             <button onClick={handleLogOut}>Logout</button>
           </>
         ) : (
-          <Link to="/register">Register</Link>
+          <>
+            <Link to="/login">Login</Link>
+            <Link to="/register">Register</Link>
+          </>
         )}
       </li>
     </>

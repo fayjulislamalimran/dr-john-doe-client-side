@@ -37,7 +37,7 @@ const CheckOut = () => {
       .then((data) => {
         console.log(data);
         if (data.acknowledged) {
-          alert("Your Order SucccessFully");
+          alert("Your Revew Succcess Fully");
           form.reset();
         }
       })
@@ -58,7 +58,7 @@ const CheckOut = () => {
       </div>
 
       <form onSubmit={handlePlaceOrder}>
-        <h2 className="text-2xl text-center">Order Confirm Books</h2>
+        <h2 className="text-2xl text-center">This is Your Revew Page</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-5">
           <input name="firstName" type="text" placeholder="First Name" className="input w-full input-bordered rounded-md" required />
           <input name="lastName" type="text" placeholder="Last Name" className="input w-full input-bordered rounded-md" required />
