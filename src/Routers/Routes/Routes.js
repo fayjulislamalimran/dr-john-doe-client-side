@@ -10,41 +10,49 @@ import Register from "../../Pages/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Main></Main> ,
-        children: [
-            {
-                path: '/',
-                element: <Home></Home>
-            },
-            {
-                path: '/blog',
-                element: <Blog></Blog>
-            },
-            {
-                path: '/login',
-                element: <Login></Login>
-            },
-            {
-                path: '/register', 
-                element: <Register></Register>
-            },
-            {
-                path: '/checkout/:id',
-                element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute> ,
-                loader: ({params}) => fetch(`https://meditro-server.vercel.app/services/${params.id}`)
-            },
-            {
-                path: '/orders',
-                element: <PrivateRoute><Orders></Orders></PrivateRoute>
-            },
-            {
-                path: '/service', 
-                element: <Services></Services>
-            }
-        ]
-    },
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/checkout/:id",
+        element: (
+          <PrivateRoute>
+            <CheckOut></CheckOut>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) => fetch(`https://dr-john-doe-server.vercel.app/services/${params.id}`),
+      },
+      {
+        path: "/orders",
+        element: (
+          <PrivateRoute>
+            <Orders></Orders>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/service",
+        element: <Services></Services>,
+      },
+    ],
+  },
 ]);
 
 export default router;

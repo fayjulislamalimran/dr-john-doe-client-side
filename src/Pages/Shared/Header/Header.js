@@ -21,7 +21,7 @@ const Header = () => {
         <Link to="/blog">Blog</Link>
       </li>
       <li>
-        <Link to="/orders">Order</Link>
+        <Link to="/login">Login</Link>
       </li>
 
       <li>
@@ -30,7 +30,7 @@ const Header = () => {
             <button onClick={handleLogOut}>Logout</button>
           </>
         ) : (
-          <Link to="/login">Login</Link>
+          <Link to="/register">Register</Link>
         )}
       </li>
     </>
